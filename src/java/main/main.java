@@ -5,6 +5,10 @@ import java.util.Scanner;
 import ws.Competencia;
 import ws.ManipulacionDeDatos;
 import ws.ManipulacionDeDatos_Service;
+import ws.Rol;
+import ws.RolCompetencia;
+import ws.UsuarioRol;
+import ws.Usuario;
 
 public class main {
     public static void main(String[] args) {
@@ -21,12 +25,15 @@ public class main {
         
         List<Competencia> competencias = cliente.login(usuario, password);
         
-        if (!competencias.isEmpty()) {
-            for (Competencia competencia : competencias) {
-                System.out.println("\nCompetencia: " + competencia.getNombreCom() + ",Descripcion: " + competencia.getDescripcionCom());
-            }    
+        if (competencias != null) {
+            // System.out.println("USUARIO ENCONTRADO, NUMERO DE COMPETENCIAS --> " + usuarioEncontrado.getListaRoles());
+            for (Competencia com : competencias) {
+                    System.out.println("\nCompetencia: " + com.getNombreCom() + ",Descripcion: " + com.getDescripcionCom());
+               }
+                        
+               
         } else {
-            System.out.println("USUARIO NO ENCONTRADO");
+           System.out.println("USUARIO NO ENCONTRADO");     
         }
         
         

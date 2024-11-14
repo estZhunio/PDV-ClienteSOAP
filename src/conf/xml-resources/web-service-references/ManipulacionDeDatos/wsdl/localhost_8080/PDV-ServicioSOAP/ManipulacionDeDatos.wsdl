@@ -10,15 +10,53 @@
 <message name="loginResponse">
 <part name="parameters" element="tns:loginResponse"/>
 </message>
+<message name="cargarDatos">
+<part name="parameters" element="tns:cargarDatos"/>
+</message>
+<message name="cargarDatosResponse">
+<part name="parameters" element="tns:cargarDatosResponse"/>
+</message>
+<message name="encontrarUsuario">
+<part name="parameters" element="tns:encontrarUsuario"/>
+</message>
+<message name="encontrarUsuarioResponse">
+<part name="parameters" element="tns:encontrarUsuarioResponse"/>
+</message>
 <portType name="ManipulacionDeDatos">
 <operation name="login">
 <input wsam:Action="http://ws/ManipulacionDeDatos/loginRequest" message="tns:login"/>
 <output wsam:Action="http://ws/ManipulacionDeDatos/loginResponse" message="tns:loginResponse"/>
 </operation>
+<operation name="cargarDatos">
+<input wsam:Action="http://ws/ManipulacionDeDatos/cargarDatosRequest" message="tns:cargarDatos"/>
+<output wsam:Action="http://ws/ManipulacionDeDatos/cargarDatosResponse" message="tns:cargarDatosResponse"/>
+</operation>
+<operation name="encontrarUsuario">
+<input wsam:Action="http://ws/ManipulacionDeDatos/encontrarUsuarioRequest" message="tns:encontrarUsuario"/>
+<output wsam:Action="http://ws/ManipulacionDeDatos/encontrarUsuarioResponse" message="tns:encontrarUsuarioResponse"/>
+</operation>
 </portType>
 <binding name="ManipulacionDeDatosPortBinding" type="tns:ManipulacionDeDatos">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
 <operation name="login">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="cargarDatos">
+<soap:operation soapAction=""/>
+<input>
+<soap:body use="literal"/>
+</input>
+<output>
+<soap:body use="literal"/>
+</output>
+</operation>
+<operation name="encontrarUsuario">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

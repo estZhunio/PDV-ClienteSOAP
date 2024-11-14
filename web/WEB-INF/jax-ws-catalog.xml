@@ -2,4 +2,5 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="http://localhost:8080/PDV-ServicioSOAP/ManipulacionDeDatos?WSDL" uri="wsdl/localhost_8080/PDV-ServicioSOAP/ManipulacionDeDatos.wsdl"/>
     <system systemId="http://localhost:8080/PDV-ServicioSOAP/ManipulacionDeDatos?xsd=1" uri="wsdl/localhost_8080/PDV-ServicioSOAP/ManipulacionDeDatos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/PDV-ServicioSOAP/ManipulacionDeDatos?Tester" uri="wsdl/localhost_8080/PDV-ServicioSOAP/ManipulacionDeDatos.tester"/>
 </catalog>

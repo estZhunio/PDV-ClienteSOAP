@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/PDV-ServicioSOAP/ManipulacionDeDatos?Tester" uri="src/conf/xml-resources/web-service-references/ManipulacionDeDatos_Tester/wsdl/localhost_8080/PDV-ServicioSOAP/ManipulacionDeDatos.tester"/>
     <system systemId="http://localhost:8080/PDV-ServicioSOAP/ManipulacionDeDatos?WSDL" uri="src/conf/xml-resources/web-service-references/ManipulacionDeDatos/wsdl/localhost_8080/PDV-ServicioSOAP/ManipulacionDeDatos.wsdl"/>
     <system systemId="http://localhost:8080/PDV-ServicioSOAP/ManipulacionDeDatos?xsd=1" uri="src/conf/xml-resources/web-service-references/ManipulacionDeDatos/wsdl/localhost_8080/PDV-ServicioSOAP/ManipulacionDeDatos.xsd_1.xsd"/>
 </catalog>
